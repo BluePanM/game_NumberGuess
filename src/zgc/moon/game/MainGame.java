@@ -2,6 +2,8 @@ package zgc.moon.game;
 
 import zgc.moon.game.*;
 
+import java.util.Scanner;
+
 /**
  * Created by 中秋月 on 2016/11/14.
  *
@@ -12,6 +14,12 @@ import zgc.moon.game.*;
  */
 public class MainGame {
 	public static void main(String[] args) {
+		// 打印欢迎消息
 		Printer.printInformation();
+		// 询问是否玩游戏
+		Scanner sc_play = new Scanner(System.in);
+		System.out.println("要玩该游戏吗？\n[Y/n]>>>");
+		playOrNot
+
 	}
 }

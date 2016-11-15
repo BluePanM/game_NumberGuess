@@ -17,13 +17,7 @@ class Printer {
 	// 状态码
 	public final static int SUCCESS = 1, FAILED = 2, GOD = 3;
 
-	// 各种消息
-	private static String helloGamer = "";                  // 游戏欢迎
-	private static String success = "";                     // 游戏成功
-	private static String failed = "";                      // 游戏失败
-	private static String godMode = "";                     // 使用上帝模式
-
-	// 打印游戏信息
+	// 打印游戏基本信息
 	static void printInformation() {
 		System.out.println("测试");
 	}
@@ -33,14 +27,17 @@ class Printer {
 		switch (needs) {
 			// 成功了
 			case SUCCESS:
+				String success = "恭喜！你成功了";
 				System.out.println(success);
 				break;
 			// 失败了
 			case FAILED:
+				String failed = "";
 				System.out.println(failed);
 				break;
 			// 使用上帝模式
 			case GOD:
+				String godMode = "";
 				System.out.println(godMode);
 				break;
 		}
