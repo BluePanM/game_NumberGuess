@@ -17,10 +17,13 @@ public class MainGame {
 		// 打印欢迎消息
 		Printer.printInformation();
 		// 玩游戏吗？
-		if (!Inputer.playOrNot())
+		if (!Inputer.playOrNot()) {
 			// 不玩则退出
+			System.out.println("您选择了退出。");
 			System.exit(0);
+		}
 		// 获取难度
 		int difficulty = Inputer.getDifficulty();
+		System.out.println(difficulty);
 	}
 }

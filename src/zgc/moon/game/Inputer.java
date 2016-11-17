@@ -23,7 +23,7 @@ class Inputer {
 			System.out.print("[Y/n/q]>>>");
 			String answer = sc_play.nextLine();
 			// 玩游戏
-			if (answer.equals("Y") || answer.equals("Y"))
+			if (answer.equals("Y") || answer.equals("y"))
 				return true;
 			// 不玩游戏
 			if (answer.equals("N") || answer.equals("n"))
@@ -44,9 +44,31 @@ class Inputer {
 	 */
 	static int getDifficulty() {
 		Scanner sc_diff = new Scanner(System.in);
-		System.out.println("请选择难度(输入\"q\"以退出)\n[1~3（1为最简单，3为最难）]>>>");
+		System.out.println("请选择难度(输入\"q\"以退出)");
 		while (true) {
+			System.out.print("[1~5(1为最简单，5为最难)]>>>");
 			String diff = sc_diff.nextLine();
+			// 判断
+			// 输入1
+			if (diff.equals("1"))
+				return 1;
+			// 输入2
+			if (diff.equals("2"))
+				return 2;
+			// 输入3
+			if (diff.equals("3"))
+				return 3;
+			// 输入4
+			if (diff.equals("4"))
+				return 4;
+			// 输入5
+			if (diff.equals("5"))
+				return 5;
+			// 输入Q（退出）
+			if (diff.equals("Q") || diff.equals("q")) {
+				System.out.println("您选择了退出。");
+				System.exit(0);
+			}
 		}
 
 	}
