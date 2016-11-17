@@ -8,7 +8,7 @@ package zgc.moon.game;
  *
  * 计时器类
  */
-public class Timer {
+class Timer {
 	/**
 	 * 本来是打算用多线程计时（持续计时），
 	 * 难度太大，故采用“记录开头”和“记录结尾”的方法

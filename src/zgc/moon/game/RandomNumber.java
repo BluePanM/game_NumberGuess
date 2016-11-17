@@ -8,5 +8,5 @@ package zgc.moon.game;
  *
  * 用以生成随机数。
  */
-public class RandomNumber {
+class RandomNumber {
 }

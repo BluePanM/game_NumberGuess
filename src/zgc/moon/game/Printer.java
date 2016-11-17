@@ -19,7 +19,10 @@ class Printer {
 
 	// 打印游戏基本信息
 	static void printInformation() {
-		System.out.println("测试");
+		System.out.println("========================\n" +
+					       "|      中秋月 出品     |\n" +
+				           "|     猜 数 字   游戏  |\n" +
+				           "========================");
 	}
 
 	// 打印游戏状态
