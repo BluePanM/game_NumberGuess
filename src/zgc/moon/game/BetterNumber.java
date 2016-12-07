@@ -10,5 +10,11 @@ import zgc.moon.game.RandomNumber;
  *
  * 用来生成符合“难度”的上、下范围
  */
-class FixNumber {
+class BetterNumber {
+	private RandomNumber randomNumber = new RandomNumber();
+
+	int getBetterNumber(int diffculty) {
+		// TODO:把这里的难度修改好！
+		return randomNumber.getRandomNumber();
+	}
 }

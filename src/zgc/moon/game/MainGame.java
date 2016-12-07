@@ -1,9 +1,5 @@
 package zgc.moon.game;
 
-import zgc.moon.game.FixNumber;
-import zgc.moon.game.Printer;
-import zgc.moon.game.Timer;
-
 /**
  * Created by 中秋月 on 2016/11/14.
  *
@@ -24,6 +20,8 @@ public class MainGame {
 		}
 		// 获取难度
 		int difficulty = Inputer.getDifficulty();
-		System.out.println(difficulty);
+		// 获取随机数
+		BetterNumber br = new BetterNumber();
+		int randomNumber = br.getBetterNumber(difficulty);
 	}
 }
